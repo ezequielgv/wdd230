@@ -1,0 +1,40 @@
+/* larger.css */
+
+@media (min-width: 768px) {
+
+    body { font-family: 'Open Sans', sans-serif; }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header img { margin-bottom: 0; }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        border-bottom: none; 
+        border-right: 1px solid #ccc;
+    }
+
+    nav ul li:last-child { border-right: none; }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        grid-template-areas:"learning-activities information";
+    }
+
+    .card:first-child { /* Target the Learning Activities card (it's the first .card in main) */
+        grid-area: learning-activities; /* Assign to the 'learning-activities' area */
+    }
+
+    .card:last-child { /* Target the Information card (it's the last .card in main) */
+        grid-area: information; /* Assign to the 'information' area */
+    }
+}
