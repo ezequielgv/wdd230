@@ -65,7 +65,7 @@ section {
 
 section:last-child { margin-bottom: 50px; }
 
-/* CSS for Wireframe Section - Two Columns */
+/* CSS for Wireframe Section */
 #wireframe {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -77,9 +77,7 @@ section:last-child { margin-bottom: 50px; }
     text-align: center;
 }
 
-.wireframe-phone img{
-    margin-left: 150px;
-}
+.wireframe-phone img{ margin-left: 150px; }
 
 footer {
     text-align: center;
