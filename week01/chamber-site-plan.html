@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"> <title>Chamber of Commerce Site Plan - Buenos Aires</title> </head>
+<body class="bg-white">
+    <header class="bg-primary text-secondary">
+        <h1>Website Plan</h1>
+        <h2>Chamber of Commerce of Buenos Aires</h2> </header>
+
+    <main>
+        <section id="site-name">
+            <h3>Site Name</h3>
+            <p>
+                The site name will be <strong>Chamber of Commerce of Buenos Aires</strong>. This name was selected because it clearly
+                indicates the purpose of the website, which is to represent the Chamber of Commerce for the city of Buenos Aires.
+                It is straightforward, professional, and easy to understand for visitors interested in business and commerce in Buenos Aires.
+            </p>
+        </section>
+
+        <section id="site-purpose">
+            <h3>Site Purpose</h3>
+            <p>The purpose of the Chamber of Commerce of Buenos Aires website is twofold:</p>
+            <ol>
+                <li><strong>Promote Business Growth in Buenos Aires:</strong> The website will serve as a platform to showcase the vibrant business environment of Buenos Aires, attracting new businesses, investment, and talent to the city. It will highlight the benefits of doing business in Buenos Aires, including its strategic location, skilled workforce, and thriving economy.</li>
+                <li><strong>Support and Connect Local Businesses:</strong> The website will provide resources and networking opportunities for existing businesses in Buenos Aires. It will act as a central hub for members to connect with each other, access valuable information, and participate in Chamber events and programs designed to foster their growth and success.</li>
+            </ol>
+        </section>
+
+        <section id="scenarios">
+            <h3>Scenarios</h3>
+            <p>Here are three scenarios representing questions from potential website visitors:</p>
+            <ul>
+                <li><strong>Scenario 1: Business Networking Opportunities</strong> - A local business owner asks: "What events will the Chamber be holding in the next quarter that will allow me to network with other businesses in Buenos Aires and expand my professional contacts?"</li>
+                <li><strong>Scenario 2: Membership Benefits Inquiry</strong> - A business considering joining the Chamber asks: "What are the different membership levels and what specific benefits does each level offer to help my business grow and gain visibility in Buenos Aires?"</li>
+                <li><strong>Scenario 3: Economic Data and Demographics</strong> - An investor from outside Buenos Aires asks: "Where can I find reliable data on the current economic climate and demographics of Buenos Aires to assess the potential for investment in the city?"</li>
+            </ul>
+        </section>
+
+        <section id="color-schema">
+            <h3>Color Schema</h3>
+            <p>The color scheme for the Chamber of Commerce of Buenos Aires website is inspired by the colors of the Argentinian flag and aims for a clean, professional, and accessible design.</p>
+            <ul>
+                <li><strong> <span class="text-primary">Primary Color:</span></strong> <code>--color-primary: #3a5c7e;</code> </li>
+                <li><strong> <span class="text-black">Text Color:</span></strong> <code>--color-text-black: #252525;</code></li>
+                <li><strong> <span class="bg-primary text-secondary">Secondary Color:</span></strong> <code>--color-secondary-yellow: #FFD700;</code></li>
+                <li><strong> <span class="bg-primary text-white">Background Color:</span></strong> <code>--color-background-white: #ffffff;</code></li>
+                <li><strong> <span class="bg-primary text-accent-gray">Accent Color:</span></strong> <code>--color-accent-gray: #E0E0E0;</code></li>
+            </ul>
+            <p>These colors are defined as CSS variables in the <code>:root</code> selector for easy modification and consistent application throughout the website.</p>
+        </section>
+
+        <section id="typography"> <h3>Typography</h3>
+            <p>For the Chamber of Commerce of Buenos Aires website, we will use a combination of fonts to ensure readability and a professional aesthetic.</p>
+            <ul>
+                <li><strong>Base Font (Body Text):</strong> <code>var(--font-family-base)</code> - We will use a <strong>system font stack</strong> for the body text. This ensures excellent readability and performance across different operating systems and devices. System fonts are pre-installed on users' devices, making websites load faster and improving accessibility. This stack includes popular sans-serif fonts like <strong>system-ui,Roboto and sans-serif</strong>.</li>
+            </ul>
+        </section>
+
+        <section id="wireframe">
+            <h3>Wireframe</h3>
+
+            <div class="wireframe-desktop">
+                <h4>Desktop Wireframe</h4>
+                <p><strong>Image Placeholder:</strong> <code>index-wireframe.jpg</code></p>
+                <img src="images/index-wireframe.jpg" alt="Desktop Wireframe Placeholder" width="600">
+            </div>
+            
+            <div class="wireframe-phone">
+                <h4>Mobile Wireframe</h4>
+                <p><strong>Image Placeholder:</strong> <code>index-phone-wireframe.jpg</code></p>
+                <img src="images/index-phone-wireframe.jpg" alt="Mobile Wireframe Placeholder" width="300">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Website Plan</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

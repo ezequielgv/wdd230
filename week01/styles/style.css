@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primary: #3a5c7e;          /* Argentinian Blue (Soft and Light) */
+    --color-secondary: #FFD700;      /* May Sun Yellow (Soft Gold) */
+    --color-white: #ffffff;      /* White for background */
+    --color-black: #252525;           /* Black for primary text */
+    --color-accent-gray: #E0E0E0;         /* Light Gray for subtle accents */
+
+    /* Typography Variables */
+    --font-family-base: system-ui, sans-serif;
+    --font-family-headings: 'Roboto Slab', serif;
+}
+
+/* Color Classes */
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-white { background-color: var(--color-white); }
+.bg-accent-gray { background-color: var(--color-accent-gray); }
+
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-white { color: var(--color-white); }
+.text-black { color: var(--color-black); }
+.text-accent-gray { color: var(--color-accent-gray); }
+
+/* Elemnts */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-base);
+    color: var(--color-black);
+}
+
+header {
+    color: var(--color-black);
+    padding: 1em 0;
+    text-align: center;
+}
+
+main { padding: 20px; }
+
+h1, h2, h3 {
+    font-family: var(--font-family-headings);
+    font-weight: bold;
+}
+
+a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+section {
+    margin-bottom: 20px;
+    padding: 15px 35px;
+    background-color: var(--color-accent-gray);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section:last-child { margin-bottom: 50px; }
+
+/* CSS for Wireframe Section - Two Columns */
+#wireframe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#wireframe h3{
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.wireframe-phone img{
+    margin-left: 150px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: var(--color-accent-gray);
+    color: var(--color-black);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
