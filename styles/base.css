@@ -1,11 +1,4 @@
 /* base.css */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
@@ -95,9 +88,50 @@ main h1 {
     color: #007bff;
 }
 
+.hamburger { display: none;}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+/* Modificar media query para móviles */
+@media screen and (max-width: 768px) {
+    .hamburger { 
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav ul.active { display: flex; }
+  
+    /* Dark mode */
+    .dark-mode {
+        background-color: #1a1a1a;
+        color: #fff;
+    }
+
+    .dark-mode nav ul { background-color: #2d2d2d; }
+}
+  
+/* Eliminar border-right en móviles */
+@media (max-width: 768px) {
+    nav ul li { 
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+    }
 }
